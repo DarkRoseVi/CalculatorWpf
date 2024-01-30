@@ -1,0 +1,142 @@
+﻿<Window x:Class="CalculatorWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculatorWpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="300"
+        ResizeMode="NoResize">
+    <Grid>
+
+        <StackPanel Orientation="Vertical">
+            <Border BorderBrush="Coral" 
+                    Width="280" Height="50"
+                    BorderThickness="2">
+            <TextBlock  
+                 VerticalAlignment="Top" 
+               HorizontalAlignment="Center"
+                 Name="Tb" Text=""
+                 />
+                
+            </Border>
+
+            <StackPanel HorizontalAlignment="Left"
+                    VerticalAlignment="Center" Orientation="Horizontal"
+                    Margin="0 10 0 0">
+
+                <Button Content="Del" Style="{StaticResource ButtNumber}"
+                        x:Name="DelBtn" 
+                        Width="60" 
+                        Margin="25 0 5 0"
+                        Click="DelBtn_Click"/>
+
+                <Button Content="R" Style="{StaticResource ButtNumber}"
+                         Margin="15 0 10 0 " 
+                        x:Name="RBtn"
+                        Click="RBtn_Click"/>
+
+                <Button Content="Off" Style="{StaticResource ButtNumber}"
+                         Margin="5 0 0 0 " 
+                        x:Name="Offbtn"
+                        Width="100"
+                        Click="Offbtn_Click"/>
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center" Orientation="Horizontal"
+                        Margin="10">
+
+                <Button Content="1" Style="{StaticResource ButtNumber}"
+                        x:Name="OneBtn"  Margin="10 0 10 0 "
+                        Click="BtnClick"/>
+
+                <Button Content="2" Style="{StaticResource ButtNumber}"
+                        Name="TwoBtn" Margin="10 0 10 0 "
+                        Click="BtnClick"/>
+
+                <Button Content="3" Style="{StaticResource ButtNumber}"
+                        x:Name="ThreeBtn"  Margin="10 0 10 0 "
+                        Click="BtnClick"/>
+
+                <Button Content="/" Style="{StaticResource ButtNumber}"
+                        x:Name="DivisionBtn"  Margin="10 0 10 0 "
+                        Click="BtnClick"/>
+
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center" Orientation="Horizontal"
+                       >
+
+                <Button Content="4" Style="{StaticResource ButtNumber}"
+                        x:Name="FourBtn"  Margin="10 0 10 0 "
+                        Click="BtnClick"/>
+
+                <Button Content="5" Style="{StaticResource ButtNumber}"
+                        Name="FiveBtn"  Margin="10 0 10 0 "
+                        Click="BtnClick"/>
+
+                <Button Content="6" Style="{StaticResource ButtNumber}"
+                        x:Name="SixBtn"  Margin="10 0 10 0 "
+                        Click="BtnClick"/>
+
+                <Button Content="*" Style="{StaticResource ButtNumber}"
+                        x:Name="MultiplicationsBtn"  Margin="10 0 10 0 "
+                        Click="BtnClick"/>
+            </StackPanel>
+
+
+            <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center" Orientation="Horizontal"
+                       >
+
+                <Button Content="7" Style="{StaticResource ButtNumber}"
+                        x:Name="SevenBtn"  Margin="10 15 10 0 "
+                        Click="BtnClick"/>
+
+                <Button Content="8" Style="{StaticResource ButtNumber}"
+                        Name="EightBtn"  Margin="10 15 10 0 "
+                        Click="BtnClick"/>
+
+                <Button Content="9" Style="{StaticResource ButtNumber}"
+                        x:Name="NineBtn"  Margin="10 15 10 0 "
+                        Click="BtnClick"/>
+
+                <Button Content="-"
+                        Style="{StaticResource ButtNumber}"
+                        Margin="10 15 10 0 "
+                        x:Name="SubtractionBtn"
+                        Click="BtnClick"/>
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center" Orientation="Horizontal"
+                       >
+                <Button Content="0" Style="{StaticResource ButtNumber}"
+                        x:Name="ZeroBtn"  
+                       Margin="0 15 0 10"
+                        Click="BtnClick"/>
+
+
+                <Button  Style="{StaticResource ButtNumber}"
+                        x:Name="EquallyBtn"  Content="="
+                        Margin="10 15 0 10" 
+                         Click="EquallyBtn_Click"
+                         Width="130"/>
+
+                <Button Style="{StaticResource ButtNumber}"
+                        Content="+" Margin="10 15 0 10" 
+                        x:Name="AdditionBtn"
+                        Click="BtnClick"/>
+
+
+
+
+            </StackPanel>
+
+        </StackPanel>
+
+
+    </Grid>
+</Window>
